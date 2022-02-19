@@ -18,4 +18,4 @@ Number of threads: `4`.
 | Parallel Attempt3   | `#pragma omp critical`     | 1000000000    | 6.22936e+06     | critical region code is executed for 1 billion times, which introduces extreme overhead     |
 | Parallel Attempt4   | using local psum variable     | 1000000000    | 0.374321     | Used thread private psum variable to store local sums and use critical to perform final sum     |
 | Parallel Attempt5   | `#pragma omp for`     | 1000000000    | 0.544633     | instead of manually dividing the iterations, utilized the omp for and letting compiler take care of it.     |
-| Parallel Attempt6   | `#oragma omp for reduction(+:sum)`    | 1000000000    | 0.531436     | Instead of using local thread private psum variable, used omp reduction which does the same internally    |
+| Parallel Attempt6   | `#pragma omp for reduction(+:sum)`    | 1000000000    | 0.531436     | Instead of using local thread private psum variable, used omp reduction which does the same internally    |
