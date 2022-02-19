@@ -11,7 +11,7 @@ Number of threads: `4`.
 **Evaluation:**
 
 | Method | Optimization Performed | Sum | Time Taken(secs) | Comments |
-| :---         |     :---:      |          ---: |
+| :---         |     :---:      |          ---: |          ---: |          ---: |
 | Serial   | None     | 1000000000    | 1.856     | None    |
 | Parallel Atmp1   | `#pragma omp parallel`    | 1151250307    | 12.0354    | 1. Incorrect result (Race condition). <br/>2.More time consumed than serial    |
 | Parallel Atmp2   | Manually divded ARR_SIZE into chunks for each thread     | 322464490    | 2.90592     | Race condition still exists    |
