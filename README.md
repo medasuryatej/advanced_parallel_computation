@@ -1,2 +1,2 @@
 # advanced_parallel_computation
-This repository contains multi-processor programming and optimization techniques using OpenMP. 
+Implemented Parallel Processing techniques using OpenMP, Message Programming Interface MPI) on standrad Matrix Multiplication.
